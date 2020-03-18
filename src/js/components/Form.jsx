@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { DatePicker } from 'antd';
 
 class Form extends Component {
   constructor() {
@@ -24,6 +25,7 @@ class Form extends Component {
   render() {
     return (
       <form>
+        <DatePicker />
         <input
           type="text"
           value={this.state.value}
